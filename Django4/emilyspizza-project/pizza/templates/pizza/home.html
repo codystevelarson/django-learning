@@ -1,2 +1,11 @@
-<h1>Emily's Pizza!</h1>
-<a href='{% url 'order' %}'>Order a pizza</a>
+{% extends 'pizza/base.html' %}
+{% block body %}
+<div class="container">
+<div class='text-center'>
+{% load static %}
+    <img src="{% static 'store.jpg' %}" class='image-fluid' alt="Emily's Pizza"/>
+</div>
+<div>
+
+
+{% endblock body %}
